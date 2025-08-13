@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="final11">
+  <link
+    name="chassis">
+    <inertial>
+      <origin
+        xyz="0.00613369995554319 0.00630158094446391 -0.0129914457038721"
+        rpy="0 0 0" />
+      <mass
+        value="0.229593466768862" />
+      <inertia
+        ixx="0.000409002358034074"
+        ixy="-8.26398430057671E-07"
+        ixz="4.22260098488291E-07"
+        iyy="0.000250284517054187"
+        iyz="2.42634496249136E-20"
+        izz="0.000637401494004145" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/chassis.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/chassis.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel1">
+    <inertial>
+      <origin
+        xyz="6.93889390390723E-18 0.0138687133269963 -4.85722573273506E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.109892125624407" />
+      <inertia
+        ixx="7.85873544749506E-05"
+        ixy="-1.20446702144456E-21"
+        ixz="-3.3881317890172E-21"
+        iyy="0.000131114516168852"
+        iyz="-1.75835620105027E-19"
+        izz="7.85873544749506E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/wheel1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/wheel1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel1"
+    type="fixed">
+    <origin
+      xyz="-0.104227344246978 0.055 -0.0225698233330696"
+      rpy="-3.14159265358979 0.199161601196109 1.5707963267949" />
+    <parent
+      link="chassis" />
+    <child
+      link="wheel1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel2">
+    <inertial>
+      <origin
+        xyz="0 0.0138687133269963 -1.38777878078145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.109892125624407" />
+      <inertia
+        ixx="7.85873544749506E-05"
+        ixy="1.35558373089848E-20"
+        ixz="1.35525271560688E-20"
+        iyy="0.000131114516168852"
+        iyz="-1.99442519109001E-20"
+        izz="7.85873544749506E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/wheel2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/wheel2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel2"
+    type="fixed">
+    <origin
+      xyz="0.115377293089526 0.0549999999999999 -0.0225698233330696"
+      rpy="-3.14159265358979 0.663030869689347 -1.5707963267949" />
+    <parent
+      link="chassis" />
+    <child
+      link="wheel2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="castersupport1">
+    <inertial>
+      <origin
+        xyz="0.00337745633298084 6.93889390390723E-18 -0.0127717338858997"
+        rpy="0 0 0" />
+      <mass
+        value="0.00411404602499779" />
+      <inertia
+        ixx="9.67010911600631E-07"
+        ixy="-1.98523347012727E-23"
+        ixz="8.45755550847918E-08"
+        iyy="8.04763775735206E-07"
+        iyz="1.7205356741103E-22"
+        izz="3.48632255889656E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/castersupport1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/castersupport1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="castersupport1"
+    type="continuous">
+    <origin
+      xyz="-0.0475049493705497 -0.108253164903643 -0.00756982333306975"
+      rpy="0 0 -1.47606245011241" />
+    <parent
+      link="chassis" />
+    <child
+      link="castersupport1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="caster1">
+    <inertial>
+      <origin
+        xyz="-6.93889390390723E-18 5.55111512312578E-17 6.93889390390723E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.00471054386314053" />
+      <inertia
+        ixx="3.21165618764568E-07"
+        ixy="-8.27180612553028E-24"
+        ixz="1.65436122510606E-24"
+        iyy="2.05837935766083E-07"
+        iyz="-1.65436122510606E-24"
+        izz="2.05837935766083E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/caster1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/caster1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster1"
+    type="continuous">
+    <origin
+      xyz="0.00525647128559317 0 -0.0355"
+      rpy="3.08535695083018 0 1.5707963267949" />
+    <parent
+      link="castersupport1" />
+    <child
+      link="caster1" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="castersupport2">
+    <inertial>
+      <origin
+        xyz="0.00282750209319937 -0.00184727994471481 -0.0127717338858997"
+        rpy="0 0 0" />
+      <mass
+        value="0.00411404602499779" />
+      <inertia
+        ixx="9.18475023125731E-07"
+        ixy="-7.42904867509174E-08"
+        ixz="7.08040416986509E-08"
+        iyy="8.53299664210105E-07"
+        iyz="-4.62581041228054E-08"
+        izz="3.48632255889655E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/castersupport2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/castersupport2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="castersupport2"
+    type="continuous">
+    <origin
+      xyz="0.0620451353841467 -0.11065850882518 -0.00756982333306975"
+      rpy="0 0 -1.5707963267949" />
+    <parent
+      link="chassis" />
+    <child
+      link="castersupport2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="caster2">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.00471054386314053" />
+      <inertia
+        ixx="3.21165618764568E-07"
+        ixy="3.10789063371402E-24"
+        ixz="3.30872245021211E-23"
+        iyy="2.05837935766083E-07"
+        iyz="-1.14120314437261E-24"
+        izz="2.05837935766083E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/caster2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/caster2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="caster2"
+    type="continuous">
+    <origin
+      xyz="0.00440055535810283 -0.00287499615939536 -0.0355"
+      rpy="1.5707963267949 0 0.992086691936833" />
+    <parent
+      link="castersupport2" />
+    <child
+      link="caster2" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="gear1">
+    <inertial>
+      <origin
+        xyz="2.81856651643819E-05 -0.0153454076919762 0.0083759246250935"
+        rpy="0 0 0" />
+      <mass
+        value="0.0317935210335695" />
+      <inertia
+        ixx="1.16560777768165E-05"
+        ixy="4.61843747411559E-09"
+        ixz="-2.25216651911804E-09"
+        iyy="5.1225354192183E-06"
+        iyz="1.2564384438888E-06"
+        izz="1.3823814046086E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/gear1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/gear1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gear1"
+    type="continuous">
+    <origin
+      xyz="-0.0181750251067888 -0.0979999999999982 0.0294301766669303"
+      rpy="0 0 -1.57079632679486" />
+    <parent
+      link="chassis" />
+    <child
+      link="gear1" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="board1">
+    <inertial>
+      <origin
+        xyz="-0.0205081823311091 0.108973759675048 0.0625642862383447"
+        rpy="0 0 0" />
+      <mass
+        value="0.0572555536827576" />
+      <inertia
+        ixx="0.000114202153557094"
+        ixy="8.74780527842047E-07"
+        ixz="2.92878420346074E-07"
+        iyy="3.59662699893471E-05"
+        iyz="-4.80894336240116E-05"
+        izz="9.27796899266329E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/board1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/board1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="board1"
+    type="continuous">
+    <origin
+      xyz="0.00937499999999386 -0.0937271976597312 0.0315984552879671"
+      rpy="-0.234048063844204 0 0" />
+    <parent
+      link="gear1" />
+    <child
+      link="board1" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="board2">
+    <inertial>
+      <origin
+        xyz="-0.0110541589156935 0.00260247847171052 0.0058787738125725"
+        rpy="0 0 0" />
+      <mass
+        value="0.0317851309060024" />
+      <inertia
+        ixx="2.6960265298137E-05"
+        ixy="3.70254115136902E-08"
+        ixz="1.26199405137162E-07"
+        iyy="5.02185587236164E-06"
+        iyz="7.12778918152237E-06"
+        izz="2.72000545599045E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/board2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/board2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="servo1"
+    type="revolute">
+    <origin
+      xyz="0.00667500000000625 0.106157111929533 0.0560881217576914"
+      rpy="0.232921764091441 0 0" />
+    <parent
+      link="board1" />
+    <child
+      link="board2" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="3.1415926"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="board5">
+    <inertial>
+      <origin
+        xyz="0.00934865613941674 0.0791580797728059 0.00587806871523788"
+        rpy="0 0 0" />
+      <mass
+        value="0.03400686956056" />
+      <inertia
+        ixx="1.15962818951111E-05"
+        ixy="-5.01490954026015E-09"
+        ixz="-1.11963691939229E-09"
+        iyy="5.6887053726954E-06"
+        iyz="7.71806704767885E-07"
+        izz="1.38816718948583E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/board5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/board5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="board5"
+    type="continuous">
+    <origin
+      xyz="-0.0254250075370901 -0.109439580977679 0.0459981465012512"
+      rpy="0.298507206962358 0 0" />
+    <parent
+      link="board2" />
+    <child
+      link="board5" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="board4">
+    <inertial>
+      <origin
+        xyz="0.00934910581368606 -0.0688574809985403 -0.0456718133672494"
+        rpy="0 0 0" />
+      <mass
+        value="0.0346068771760988" />
+      <inertia
+        ixx="1.2506923762609E-05"
+        ixy="3.7936418514188E-09"
+        ixz="3.46550293777575E-09"
+        iyy="7.32001008706296E-06"
+        iyz="-3.53739034232927E-06"
+        izz="1.325101139548E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/board4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/board4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="board4"
+    type="continuous">
+    <origin
+      xyz="-0.0254249999999964 0.116244508362709 -0.0300403778674326"
+      rpy="-0.285379904133439 0 0" />
+    <parent
+      link="board2" />
+    <child
+      link="board4" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="board3">
+    <inertial>
+      <origin
+        xyz="0.00940372803364277 -0.0781620188895527 0.00439998218060766"
+        rpy="0 0 0" />
+      <mass
+        value="0.0311935127145226" />
+      <inertia
+        ixx="1.07454351908292E-05"
+        ixy="-5.01500851031475E-09"
+        ixz="1.11963055130598E-09"
+        iyy="4.97784788786489E-06"
+        iyz="-8.41673457987157E-07"
+        izz="1.29678583065904E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/board3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/board3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="board3"
+    type="continuous">
+    <origin
+      xyz="-0.0187499999998701 0.201754969083007 0.12664489658574"
+      rpy="-0.0618631809787212 0 0" />
+    <parent
+      link="board1" />
+    <child
+      link="board3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="top">
+    <inertial>
+      <origin
+        xyz="0.0593054738669924 -0.026734364913859 0.0116678091196332"
+        rpy="0 0 0" />
+      <mass
+        value="0.0908911135399866" />
+      <inertia
+        ixx="3.58700915974931E-05"
+        ixy="1.74012550120727E-07"
+        ixz="2.75457490552258E-08"
+        iyy="2.67019895400608E-05"
+        iyz="-6.30069578951639E-06"
+        izz="4.35759423678658E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/top.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/top.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="top"
+    type="continuous">
+    <origin
+      xyz="0.0093749999998769 -0.0959878446324843 0.00824461516029251"
+      rpy="-0.0173871570490782 0 0" />
+    <parent
+      link="board3" />
+    <child
+      link="top" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="gear2">
+    <inertial>
+      <origin
+        xyz="-0.00208454909514366 -0.00645927497160175 -0.0045717108370559"
+        rpy="0 0 0" />
+      <mass
+        value="0.00499476661130108" />
+      <inertia
+        ixx="1.33421630709664E-06"
+        ixy="9.64180035239789E-09"
+        ixz="6.82422505835815E-09"
+        iyy="5.3629628750717E-07"
+        iyz="-4.0825148293421E-07"
+        izz="8.24001512889019E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/gear2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.486274509803922 0.486274509803922 0.486274509803922 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/gear2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="servo2"
+    type="revolute">
+    <origin
+      xyz="0.106892556516242 -0.0386982658122677 0.00432370986319441"
+      rpy="0.312172102119241 0 0" />
+    <parent
+      link="top" />
+    <child
+      link="gear2" />
+    <axis
+      xyz="-1 0 0" />
+    <limit
+      lower="0"
+      upper="3.1415926"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="hand1">
+    <inertial>
+      <origin
+        xyz="-0.00554999907474349 0.0273501415183054 -0.00427409875971384"
+        rpy="0 0 0" />
+      <mass
+        value="0.00471611444420384" />
+      <inertia
+        ixx="1.41160651209586E-06"
+        ixy="4.53744025185417E-12"
+        ixz="-3.86228325150739E-13"
+        iyy="2.66142331725543E-07"
+        iyz="3.48674718637265E-07"
+        izz="1.40319115853696E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/hand1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.0588235294117647 0.0941176470588235 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/hand1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hand1"
+    type="continuous">
+    <origin
+      xyz="0.00344999999999829 -0.03264793300015 -0.0231108721018276"
+      rpy="-1.10365021578606 0 0" />
+    <parent
+      link="gear2" />
+    <child
+      link="hand1" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="gear3">
+    <inertial>
+      <origin
+        xyz="-9.71445146547012E-16 0.00591940701990808 -0.00419169120176627"
+        rpy="0 0 0" />
+      <mass
+        value="0.00549380749824067" />
+      <inertia
+        ixx="1.44601023614242E-06"
+        ixy="-5.40308346921376E-16"
+        ixz="4.47716283454572E-16"
+        iyy="5.80928254148373E-07"
+        iyz="4.50539467398146E-07"
+        izz="8.98044317344039E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/gear3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/gear3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gear3"
+    type="continuous">
+    <origin
+      xyz="0.104892556516239 -0.00995786882977603 0.0135989302650266"
+      rpy="0.312172102119241 0 0" />
+    <parent
+      link="top" />
+    <child
+      link="gear3" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="hand2">
+    <inertial>
+      <origin
+        xyz="9.99990747409252E-05 -0.0275499903644661 -0.00426400003963191"
+        rpy="0 0 0" />
+      <mass
+        value="0.00471611447460079" />
+      <inertia
+        ixx="1.41160655980341E-06"
+        ixy="4.53745646824455E-12"
+        ixz="3.86197490197248E-13"
+        iyy="2.66142331097018E-07"
+        iyz="-3.48674730889723E-07"
+        izz="1.4031912076512E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/hand2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.0588235294117647 0.0941176470588235 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/hand2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="hand2"
+    type="continuous">
+    <origin
+      xyz="0 0.0327671350219092 -0.0229415531831647"
+      rpy="1.10279502458518 0 0" />
+    <parent
+      link="gear3" />
+    <child
+      link="hand2" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="stick1">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-16 -0.0199999992343879 1.08023956446601E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.00211895706275184" />
+      <inertia
+        ixx="3.68575855232392E-07"
+        ixy="5.0712073400479E-21"
+        ixz="-5.60590520432933E-23"
+        iyy="1.77333862540839E-08"
+        iyz="-2.3482176937084E-18"
+        izz="3.63556211354819E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/stick1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.890196078431372 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/stick1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="stick1"
+    type="continuous">
+    <origin
+      xyz="0.104892556516244 -0.022955667571484 -0.0116114901804902"
+      rpy="0.928168174411869 0 0" />
+    <parent
+      link="top" />
+    <child
+      link="stick1" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+  <link
+    name="stick2">
+    <inertial>
+      <origin
+        xyz="-6.10622663543836E-16 0.0199999992355975 1.08145073451915E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.00211895706275184" />
+      <inertia
+        ixx="3.68575855232393E-07"
+        ixy="5.0471274595788E-21"
+        ixz="6.19042180433891E-23"
+        iyy="1.77333862540839E-08"
+        iyz="-2.34841952577786E-18"
+        izz="3.6355621135482E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/stick2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.890196078431372 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final11/meshes/stick2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="stick2"
+    type="continuous">
+    <origin
+      xyz="0.104892556516239 -0.0134154078675825 -0.00853261788868986"
+      rpy="-0.303696878309267 0 0" />
+    <parent
+      link="top" />
+    <child
+      link="stick2" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+</robot>
