@@ -28,4 +28,5 @@ To make the mechanism work correctly in Gazebo, you'll need to handle the closed
 
 Without one of these solutions, the mechanism will not function correctly in simulation, as the omitted joint will be completely unconstrained.
 
-After the preparations above  for the robot model, you can start simulation by controlling the spinning of the wheels and servos. The task for the Mission Robot to complete is clearly mentioned in the **Rulebook**.
+
+After the preparations above  for the robot model, you can start simulation by controlling the spinning of the wheels and servos. The task for the Mission Robot to complete is clearly mentioned in the ·Online Mode· part of **Rulebook**.
