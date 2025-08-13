@@ -4,7 +4,7 @@ Our Mission Robot is basically composed of three parts:
 
 - a chassis with two rear drive wheels and two front caster wheels.
 
-- a **scissor-lift mechanism** driven by a servo, and it's used for lifting and lowering the claw.(For a scissor-lift mechanism, refer to https://www.thingiverse.com/thing:5225652)
+- a **scissor-lift mechanism** driven by a servo, and it's used for lifting and lowering the claw. (For a scissor-lift mechanism, refer to https://www.thingiverse.com/thing:5225652)
 - a claw driven by another servo.
 
 ![屏幕截图 2025-08-14 021648](屏幕截图 2025-08-14 021648.png)
@@ -30,4 +30,5 @@ Without one of these solutions, the mechanism will not function correctly in sim
 
 
 After the preparations above  for the robot model, you can start simulation by controlling the spinning of the wheels and servos. The task for the Mission Robot to complete is clearly mentioned in the `Online Mode` part of **Rulebook**.
+
 
