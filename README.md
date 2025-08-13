@@ -7,7 +7,7 @@ Our Mission Robot is basically composed of three parts:
 - a **scissor-lift mechanism** driven by a servo, and it's used for lifting and lowering the claw. (For a scissor-lift mechanism, refer to https://www.thingiverse.com/thing:5225652)
 - a claw driven by another servo.
 
-![屏幕截图 2025-08-14 021648](屏幕截图 2025-08-14 021648.png)
+![屏幕截图 2025-08-14 021648](屏幕截图_2025-08-14_021648.png)
 
 Due to the limitations of the URDF format, which requires a **tree-like structure**, I had to make some adjustments to represent the closed-loop kinematic chain of our linkage mechanism in Mission Robot.
 
@@ -17,7 +17,7 @@ Due to the limitations of the URDF format, which requires a **tree-like structur
 
 I modeled the mechanism as an **open-chain** system by defining only **several revolute/continuous joints** in the URDF, **while other joints (in red circles in the screenshot below)**, which closes the loop, has been omitted.
 
-![屏幕截图 2025-08-14 040047](屏幕截图 2025-08-14 040047.png)
+![屏幕截图 2025-08-14 040047](屏幕截图_2025-08-14_040047.png)
 
 ### What You Need to Do
 
@@ -30,5 +30,6 @@ Without one of these solutions, the mechanism will not function correctly in sim
 
 
 After the preparations above  for the robot model, you can start simulation by controlling the spinning of the wheels and servos. The task for the Mission Robot to complete is clearly mentioned in the `Online Mode` part of **Rulebook**.
+
 
 
